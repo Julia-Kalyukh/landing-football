@@ -135,8 +135,43 @@ body {
   top: -1px;
 }
 
+h1, h2, h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+}
+
 a {
   text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 /* ЛЕНДИНГ "ВСЕ ДЛЯ ФУТБОЛА" */
@@ -146,132 +181,39 @@ a {
 
 .football__header {
   margin: 0 0 22px 15px;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 34px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
-/* категории товаров */
-.football__categories {
-  margin: 23.5px 13.5px -4.5px 7.5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.football__categories_header {
-  margin: 0 12px 5.74px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 1.3px;
-  text-transform: uppercase;
-}
-
-.football__categories_tags {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+/* НАВИГАЦИЯ */
+.football__nav {
   margin-left: 12px;
 }
-.football__categories_tags a {
-  display: inline-block;
-  padding: 2px 5.7px;
-  font-weight: 400;
-  font-size: 6.69666px;
-  line-height: 11px;
-  color: #333333;
-  background: #FFFFFF;
-  border-radius: 1.91333px;
+.football__nav ul {
+  margin: 0;
+  margin-top: -8px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
-.football__categories_tags a:not(:last-child) {
-  margin-right: 2.87px;
-}
-
-.football__categories_item {
-  height: 187px;
-  margin: 4.5px;
-  background-repeat: no-repeat;
-}
-.football__categories_item:not(:first-child) {
-  width: 140px;
-}
-.football__categories_item--form {
-  width: 100% !important;
-  background-image: url(../img/images/categories/form.png);
-  background-size: contain;
-  background-position: 67.5% 0;
-  background-color: #ECF7FF;
-}
-.football__categories_item--form .football__categories_header {
-  margin: 105px 12px 12px;
-}
-.football__categories_item--form .football__categories_tags a {
-  padding: 6px 12px;
+.football__nav ul li {
+  margin-top: 8px;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  border-radius: 4px;
 }
-.football__categories_item--form .football__categories_tags a:not(:last-child) {
-  margin-right: 6px;
+.football__nav ul li:not(:last-child) {
+  margin-right: 24px;
 }
-.football__categories_item--boots {
-  background-image: url(../img/images/categories/boots.png);
-  background-size: 132.59px;
-  background-position: 50% 0;
-  background-color: #EFF8E2;
+.football__nav ul li a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #000000;
 }
-.football__categories_item--boots .football__categories_header {
-  margin-top: 130.94px;
-}
-.football__categories_item--accessories {
-  background-image: url(../img/images/categories/accessories.png);
-  background-size: 110.13px;
-  background-position: 50% 6px;
-  background-color: #FFF3ED;
-}
-.football__categories_item--accessories .football__categories_header {
-  margin-top: 130.94px;
-}
-.football__categories_item--balls {
-  background-image: url(../img/images/categories/balls.png);
-  background-size: 108.52px;
-  background-position: 50% 6.31px;
-  background-color: #EBFDFB;
-}
-.football__categories_item--balls .football__categories_header {
-  margin-top: 152.51px;
-}
-.football__categories_item--bags {
-  background-image: url(../img/images/categories/bags.png);
-  background-size: 90.37px;
-  background-position: 50% 11.5px;
-  background-color: #F4F4F4;
-}
-.football__categories_item--bags .football__categories_header {
-  margin-top: 130.51px;
-}
-.football__categories_item--inventory {
-  background-image: url(../img/images/categories/inventory.png);
-  background-size: 95.19px;
-  background-position: 50% -1.48px;
-  background-color: #FFF3FF;
-}
-.football__categories_item--inventory .football__categories_header {
-  margin-top: 136.68px;
-  margin-bottom: 0;
-}
-.football__categories_item--medicine {
-  background-image: url(../img/images/categories/medicine.png);
-  background-size: 96px;
-  background-position: 50% 31.17px;
-  background-color: #ECF1FF;
-}
-.football__categories_item--medicine .football__categories_header {
-  margin-top: 136.68px;
-  margin-bottom: 0;
+.football__nav ul li svg {
+  margin-right: 8px;
+  fill: #000000;
 }
 
 /* Бренды */
@@ -295,6 +237,128 @@ a {
   padding-bottom: 20px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+/* КАТЕГОРИИ ТОВАРОВ */
+.football__categories {
+  margin: 23.5px 13.5px -4.5px 7.5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.football__categories_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+}
+
+.football__categories_header {
+  margin: 0;
+  margin-left: 12px;
+}
+
+.football__categories_tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 12px;
+}
+.football__categories_tags .categories_tag {
+  display: inline-block;
+  padding: 2px 5.7px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  font-size: 6.69666px;
+  line-height: 11px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 1.91333px;
+  cursor: pointer;
+}
+.football__categories_tags .categories_tag:not(:last-child) {
+  margin-right: 2.87px;
+}
+.football__categories_tags .categories_tag--close {
+  background: none;
+  border: 1px solid #333333;
+}
+.football__categories_tags .categories_tag.js-tag-none {
+  display: none;
+}
+
+.football__categories_item {
+  position: relative;
+  height: 187px;
+  margin: 4.5px;
+  background-repeat: no-repeat;
+}
+.football__categories_item:not(:first-child) {
+  width: 140px;
+}
+.football__categories_item--form {
+  width: 100% !important;
+  background-image: url(../img/images/categories/form.png);
+  background-size: contain;
+  background-position: 67.5% 0;
+  background-color: #ECF7FF;
+}
+.football__categories_item--form .football__categories_header {
+  margin-bottom: 12px;
+}
+.football__categories_item--form .football__categories_tags .categories_tag {
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+}
+.football__categories_item--form .football__categories_tags .categories_tag:not(:last-child) {
+  margin-right: 6px;
+}
+.football__categories_item--boots {
+  background-image: url(../img/images/categories/boots.png);
+  background-size: 132.59px;
+  background-position: 50% 0;
+  background-color: #EFF8E2;
+}
+.football__categories_item--boots .football__categories_header {
+  margin-bottom: 5.74px;
+}
+.football__categories_item--accessories {
+  background-image: url(../img/images/categories/accessories.png);
+  background-size: 110.13px;
+  background-position: 50% 6px;
+  background-color: #FFF3ED;
+}
+.football__categories_item--accessories .football__categories_header {
+  margin-bottom: 5.74px;
+}
+.football__categories_item--balls {
+  background-image: url(../img/images/categories/balls.png);
+  background-size: 108.52px;
+  background-position: 50% 6.31px;
+  background-color: #EBFDFB;
+}
+.football__categories_item--bags {
+  background-image: url(../img/images/categories/bags.png);
+  background-size: 90.37px;
+  background-position: 50% 11.5px;
+  background-color: #F4F4F4;
+}
+.football__categories_item--inventory {
+  background-image: url(../img/images/categories/inventory.png);
+  background-size: 95.19px;
+  background-position: 50% -1.48px;
+  background-color: #FFF3FF;
+}
+.football__categories_item--medicine {
+  background-image: url(../img/images/categories/medicine.png);
+  background-size: 96px;
+  background-position: 50% 31.17px;
+  background-color: #ECF1FF;
 }
 
 /* ссылки */
@@ -343,11 +407,6 @@ a {
 
 .footbal__slider_descr .footbal__slider_header {
   margin: 40px 0 3px 12px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
 }
 .footbal__slider_descr .footbal__slider_header svg {
   vertical-align: text-bottom;
@@ -406,6 +465,49 @@ a {
   overflow-y: auto;
 }
 
+/* медиа */
+.footbal__media_header {
+  margin: 0 16px 16px;
+}
+
+.footbal__media_slider-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 80px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.footbal__media_slider {
+  height: 370px;
+  overflow: hidden;
+  margin-left: 12px;
+}
+.footbal__media_slider figure {
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0;
+  margin-right: 8px;
+}
+.footbal__media_slider figure h4 {
+  margin: 14px 0 4px;
+  width: 90%;
+  color: #000;
+}
+.footbal__media_slider figure .text-date {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #BABABA;
+}
+.footbal__media_slider figure img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* видео */
 .video {
   position: relative;
   height: 180px;
@@ -462,37 +564,4 @@ a {
   opacity: 0;
   width: 100%;
   height: 100%;
-}
-
-/* НАВИГАЦИЯ */
-.football__nav {
-  margin-left: 12px;
-}
-.football__nav ul {
-  margin: 0;
-  margin-top: -8px;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-.football__nav ul li {
-  margin-top: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-}
-.football__nav ul li:not(:last-child) {
-  margin-right: 24px;
-}
-.football__nav ul li a {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  color: #000000;
-}
-.football__nav ul li svg {
-  margin-right: 8px;
-  fill: #000000;
 }

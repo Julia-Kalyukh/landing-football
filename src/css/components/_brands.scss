@@ -1,0 +1,25 @@
+/* Бренды */
+.footbal__brands {
+  height: 30px;
+  margin: 72px 0 72px 16px;
+  overflow-y: hidden;
+
+  .footbal__brands_item {
+    margin-right: 35px;
+
+    svg {
+      fill: #333333;
+    }
+  }
+}
+
+.footbal__brands_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  padding-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
