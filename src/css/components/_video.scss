@@ -1,13 +1,11 @@
 /* видео */
 .video {
   position: relative;
-  height: 180px;
   width: 100%;
   margin: 72px 0 0;
 
   #video {
-    height: 180px;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
   }
 

@@ -8,9 +8,6 @@
 
 
 .football__categories_box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   position: absolute;
   bottom: 12px;
@@ -43,10 +40,6 @@
       margin-right: 2.87px;
     }
 
-    // &:not(:nth-child(-n+3)) {
-    //   display: none;
-    // }
-
     &--close {
       background: none;
       border: 1px solid #333333;
@@ -58,8 +51,6 @@
   }
 }
 
-
-
 .football__categories_item {
   position: relative;
   height: 187px;
@@ -67,7 +58,7 @@
   background-repeat: no-repeat;
 
   &:not(:first-child) {
-    width: 140px;
+    width: calc(50% - 9px);
   }
 
   &--form {
@@ -136,10 +127,6 @@
     background-size: 95.19px;
     background-position: 50% -1.48px;
     background-color: #FFF3FF;
-
-    // .football__categories_header {
-    //   margin-bottom: 0;
-    // }
   }
 
   &--medicine {
@@ -147,9 +134,5 @@
     background-size: 96px;
     background-position: 50% 31.17px;
     background-color: #ECF1FF;
-
-    // .football__categories_header {
-    //   margin-bottom: 0;
-    // }
   }
 }

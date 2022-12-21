@@ -123,7 +123,6 @@ body {
 }
 
 .container {
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -248,9 +247,6 @@ a {
 }
 
 .football__categories_box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   position: absolute;
   bottom: 12px;
@@ -297,7 +293,7 @@ a {
   background-repeat: no-repeat;
 }
 .football__categories_item:not(:first-child) {
-  width: 140px;
+  width: calc(50% - 9px);
 }
 .football__categories_item--form {
   width: 100% !important;
@@ -403,8 +399,8 @@ a {
 }
 
 .footbal__slider_img {
-  width: 320px;
-  height: 332px;
+  width: 100%;
+  height: 103.75%;
   object-fit: cover;
 }
 
@@ -416,8 +412,7 @@ a {
 }
 .footbal__slider_descr .footbal__slider_subheader {
   display: inline-block;
-  margin-left: 12px;
-  margin-bottom: 30px;
+  margin: 0 12px 30px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -513,13 +508,11 @@ a {
 /* видео */
 .video {
   position: relative;
-  height: 180px;
   width: 100%;
   margin: 72px 0 0;
 }
 .video #video {
-  height: 180px;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .video .video-control {
