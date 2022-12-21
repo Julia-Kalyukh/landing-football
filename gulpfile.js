@@ -30,6 +30,7 @@ gulp.task('server', function () {
   gulp.watch('src/js/**/*.{js,json}', { usePolling: true }, gulp.series('scripts-main', refresh));
   gulp.watch('src/img/**/*.svg', { usePolling: true }, gulp.series('icons', 'html', refresh));
   gulp.watch('src/img/**/*.{png,jpg}', { usePolling: true }, gulp.series('images', 'html', refresh));
+  gulp.watch('src/img/video/*.*', { usePolling: true }, gulp.series('video', 'html', refresh));
 });
 
 const refresh = (done) => {
@@ -106,11 +107,17 @@ gulp.task('images', function () {
     .pipe(gulp.dest("dist/img/images"));
 });
 
+gulp.task('video', function () {
+  return gulp.src("src/img/video/*.*")
+    .pipe(gulp.dest("dist/img/video"));
+});
+
 gulp.task('copy',
   gulp.series(
     'fonts',
     'images',
-    'icons'
+    'icons',
+    'video'
   )
 );
 

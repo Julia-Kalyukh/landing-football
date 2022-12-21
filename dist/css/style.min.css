@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* ПОДКЛЮЧЕНИЕ ШРИФТА */
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-LightItalic.eot");
+  src: local("../fonts/Gotham/Gotham Light Italic"), local("../fonts/Gotham/Gotham-LightItalic"), url("../fonts/Gotham/Gotham-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-LightItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-LightItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-BoldItalic.eot");
+  src: local("../fonts/Gotham/Gotham Bold Italic"), local("../fonts/Gotham/Gotham-BoldItalic"), url("../fonts/Gotham/Gotham-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-BoldItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-BoldItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-XLight.eot");
+  src: local("../fonts/Gotham/Gotham ExtraLight"), local("../fonts/Gotham/Gotham-XLight"), url("../fonts/Gotham/Gotham-XLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-XLight.woff2") format("woff2"), url("../fonts/Gotham/Gotham-XLight.woff") format("woff"), url("../fonts/Gotham/Gotham-XLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Thin.eot");
+  src: local("../fonts/Gotham/Gotham Thin"), local("../fonts/Gotham/Gotham-Thin"), url("../fonts/Gotham/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Thin.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham/Gotham-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Book.eot");
+  src: local("../fonts/Gotham/Gotham Book"), local("../fonts/Gotham/Gotham-Book"), url("../fonts/Gotham/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Book.woff") format("woff"), url("../fonts/Gotham/Gotham-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-ThinItalic.eot");
+  src: local("../fonts/Gotham/Gotham Thin Italic"), local("../fonts/Gotham/Gotham-ThinItalic"), url("../fonts/Gotham/Gotham-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-ThinItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-ThinItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-MediumItalic.eot");
+  src: local("../fonts/Gotham/Gotham Medium Italic"), local("../fonts/Gotham/Gotham-MediumItalic"), url("../fonts/Gotham/Gotham-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-MediumItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-MediumItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../fonts/Gotham/Gotham-UltraItalic.eot");
+  src: local("../fonts/Gotham/Gotham Ultra Italic"), local("../fonts/Gotham/Gotham-UltraItalic"), url("../fonts/Gotham/Gotham-UltraItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-UltraItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-UltraItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-UltraItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-BookItalic.eot");
+  src: local("../fonts/Gotham/Gotham Book Italic"), local("../fonts/Gotham/Gotham-BookItalic"), url("../fonts/Gotham/Gotham-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-BookItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-BookItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-BlackItalic.eot");
+  src: local("../fonts/Gotham/Gotham Black Italic"), local("../fonts/Gotham/Gotham-BlackItalic"), url("../fonts/Gotham/Gotham-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-BlackItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-BlackItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Light.eot");
+  src: local("../fonts/Gotham/Gotham Light"), local("../fonts/Gotham/Gotham-Light"), url("../fonts/Gotham/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Light.woff") format("woff"), url("../fonts/Gotham/Gotham-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Bold.eot");
+  src: local("../fonts/Gotham/Gotham Bold"), local("../fonts/Gotham/Gotham-Bold"), url("../fonts/Gotham/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham/Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Medium.eot");
+  src: local("../fonts/Gotham/Gotham Medium"), local("../fonts/Gotham/Gotham-Medium"), url("../fonts/Gotham/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Ultra";
+  src: url("../fonts/Gotham/Gotham-Ultra.eot");
+  src: local("../fonts/Gotham/Gotham Ultra"), local("../fonts/Gotham/Gotham-Ultra"), url("../fonts/Gotham/Gotham-Ultra.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Ultra.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Ultra.woff") format("woff"), url("../fonts/Gotham/Gotham-Ultra.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-XLightItalic.eot");
+  src: local("../fonts/Gotham/Gotham ExtraLight Italic"), local("../fonts/Gotham/Gotham-XLightItalic"), url("../fonts/Gotham/Gotham-XLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-XLightItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-XLightItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-XLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham_f";
+  src: url("../fonts/Gotham/Gotham-Black.eot");
+  src: local("../fonts/Gotham/Gotham Black"), local("../fonts/Gotham/Gotham-Black"), url("../fonts/Gotham/Gotham-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Black.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Black.woff") format("woff"), url("../fonts/Gotham/Gotham-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/* ОСНОВНЫЕ СТИЛИ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotham_f", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.invisible {
+  opacity: 0;
+  height: 0;
+  font-size: 0;
+  position: absolute;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ЛЕНДИНГ "ВСЕ ДЛЯ ФУТБОЛА" */
+.football {
+  margin: 37px 0 94px;
+}
+
+.football__header {
+  margin: 0 0 22px 15px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* категории товаров */
+.football__categories {
+  margin: 23.5px 13.5px -4.5px 7.5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.football__categories_header {
+  margin: 0 12px 5.74px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.football__categories_tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 12px;
+}
+.football__categories_tags a {
+  display: inline-block;
+  padding: 2px 5.7px;
+  font-weight: 400;
+  font-size: 6.69666px;
+  line-height: 11px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 1.91333px;
+}
+.football__categories_tags a:not(:last-child) {
+  margin-right: 2.87px;
+}
+
+.football__categories_item {
+  height: 187px;
+  margin: 4.5px;
+  background-repeat: no-repeat;
+}
+.football__categories_item:not(:first-child) {
+  width: 140px;
+}
+.football__categories_item--form {
+  width: 100% !important;
+  background-image: url(../img/images/categories/form.png);
+  background-size: contain;
+  background-position: 67.5% 0;
+  background-color: #ECF7FF;
+}
+.football__categories_item--form .football__categories_header {
+  margin: 105px 12px 12px;
+}
+.football__categories_item--form .football__categories_tags a {
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+}
+.football__categories_item--form .football__categories_tags a:not(:last-child) {
+  margin-right: 6px;
+}
+.football__categories_item--boots {
+  background-image: url(../img/images/categories/boots.png);
+  background-size: 132.59px;
+  background-position: 50% 0;
+  background-color: #EFF8E2;
+}
+.football__categories_item--boots .football__categories_header {
+  margin-top: 130.94px;
+}
+.football__categories_item--accessories {
+  background-image: url(../img/images/categories/accessories.png);
+  background-size: 110.13px;
+  background-position: 50% 6px;
+  background-color: #FFF3ED;
+}
+.football__categories_item--accessories .football__categories_header {
+  margin-top: 130.94px;
+}
+.football__categories_item--balls {
+  background-image: url(../img/images/categories/balls.png);
+  background-size: 108.52px;
+  background-position: 50% 6.31px;
+  background-color: #EBFDFB;
+}
+.football__categories_item--balls .football__categories_header {
+  margin-top: 152.51px;
+}
+.football__categories_item--bags {
+  background-image: url(../img/images/categories/bags.png);
+  background-size: 90.37px;
+  background-position: 50% 11.5px;
+  background-color: #F4F4F4;
+}
+.football__categories_item--bags .football__categories_header {
+  margin-top: 130.51px;
+}
+.football__categories_item--inventory {
+  background-image: url(../img/images/categories/inventory.png);
+  background-size: 95.19px;
+  background-position: 50% -1.48px;
+  background-color: #FFF3FF;
+}
+.football__categories_item--inventory .football__categories_header {
+  margin-top: 136.68px;
+  margin-bottom: 0;
+}
+.football__categories_item--medicine {
+  background-image: url(../img/images/categories/medicine.png);
+  background-size: 96px;
+  background-position: 50% 31.17px;
+  background-color: #ECF1FF;
+}
+.football__categories_item--medicine .football__categories_header {
+  margin-top: 136.68px;
+  margin-bottom: 0;
+}
+
+/* Бренды */
+.footbal__brands {
+  height: 30px;
+  margin: 72px 0 72px 16px;
+  overflow-y: hidden;
+}
+.footbal__brands .footbal__brands_item {
+  margin-right: 35px;
+}
+.footbal__brands .footbal__brands_item svg {
+  fill: #333333;
+}
+
+.footbal__brands_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ссылки */
+.footbal__links {
+  margin: 0 18px;
+}
+
+.footbal__links_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 10px 26px 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid rgba(186, 186, 186, 0.5);
+}
+.footbal__links_item:first-child {
+  border-top: 1px solid rgba(186, 186, 186, 0.5);
+}
+.footbal__links_item span {
+  max-width: 75%;
+}
+
+/* PRO-эксперты рекомендуют */
+.footbal__slider {
+  background-color: #F7F7F7;
+  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+.footbal__slider--recommendations {
+  margin-top: 72px;
+}
+.footbal__slider--services .footbal__slider_descr .footbal__slider_header {
+  margin-bottom: 19px;
+}
+
+.footbal__slider_img {
+  width: 100%;
+}
+
+.footbal__slider_descr .footbal__slider_header {
+  margin: 40px 0 3px 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.footbal__slider_descr .footbal__slider_header svg {
+  vertical-align: text-bottom;
+}
+.footbal__slider_descr .footbal__slider_subheader {
+  display: inline-block;
+  margin-left: 12px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* PRO-эксперты */
+.footbal__experts {
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.footbal__slider_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 18px;
+  margin: -6px 0 0 12px;
+  overflow-y: auto;
+}
+.footbal__slider_box figure {
+  min-width: 283px;
+  height: 516px;
+  border: 0.748282px solid #BABABA;
+  overflow: hidden;
+  margin: 0;
+  margin-right: 14px;
+}
+.footbal__slider_box figure img {
+  width: 100%;
+}
+.footbal__slider_box figure figcaption {
+  margin: 24px 36px 30px;
+  height: 320px;
+  overflow-y: hidden;
+}
+.footbal__slider_box figure figcaption h3 {
+  margin: 0 0 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.footbal__slider_box figure figcaption p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  overflow-y: auto;
+}
+
+.video {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  margin: 72px 0 0;
+}
+.video #video {
+  height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.video .video-control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 89.11px;
+  width: 87.19px;
+  border: 0.72px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  transition-property: opacity, visibility, width, height;
+  z-index: 1;
+}
+.video .video-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 72.66px;
+  height: 74.26px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.video .video-control::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-color: #fff;
+  border-right-width: 0;
+}
+.video .video-control-play {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* НАВИГАЦИЯ */
+.football__nav {
+  margin-left: 12px;
+}
+.football__nav ul {
+  margin: 0;
+  margin-top: -8px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.football__nav ul li {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.football__nav ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.football__nav ul li a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #000000;
+}
+.football__nav ul li svg {
+  margin-right: 8px;
+  fill: #000000;
+}
