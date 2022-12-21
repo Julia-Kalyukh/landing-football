@@ -380,6 +380,7 @@ a {
   text-transform: uppercase;
   color: #000000;
   border-bottom: 1px solid rgba(186, 186, 186, 0.5);
+  cursor: pointer;
 }
 .footbal__links_item:first-child {
   border-top: 1px solid rgba(186, 186, 186, 0.5);
@@ -402,7 +403,9 @@ a {
 }
 
 .footbal__slider_img {
-  width: 100%;
+  width: 320px;
+  height: 332px;
+  object-fit: cover;
 }
 
 .footbal__slider_descr .footbal__slider_header {
