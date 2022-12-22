@@ -10,6 +10,11 @@
     margin: 80px 25px;
   }
 
+  @media (min-width: 1024px) {
+    height: 40px;
+    margin: 82px 54px;
+  }
+
   .footbal__brands_item {
     margin-right: 35px;
 
@@ -23,6 +28,18 @@
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      transform: scale(1.33);
+
+      &:first-child {
+        margin-left: 14px;
+      }
+
+      &:last-child {
+        margin-right: 5px;
       }
     }
 
@@ -48,5 +65,9 @@
     justify-content: space-between;
     padding-bottom: 0;
     overflow: hidden;
+  }
+
+  @media (min-width: 1024px) {
+    height: 40px;
   }
 }

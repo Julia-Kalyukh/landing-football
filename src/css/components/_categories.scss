@@ -8,6 +8,10 @@
   @media (min-width: 426px) {
     margin: 25px 18px -7px 18px;
   }
+
+  @media (min-width: 1024px) {
+    margin: 35.5px 44px -6.5px 44px;
+  }
 }
 
 
@@ -89,6 +93,11 @@
     box-sizing: content-box;
   }
 
+  @media (min-width: 1024px) {
+    height: 392px;
+    margin: 6.5px 9px;
+  }
+
   &:not(:first-child) {
     width: calc(50% - 9px);
 
@@ -105,10 +114,14 @@
     background-color: #ECF7FF;
 
     @media (min-width: 426px) {
-      width: calc(66.67% - 14px) !important;
+      width: calc(100% * 0.666667 - 14px) !important;
       background-image: url(../img/images/categories/big/form.png);
       background-size: 255.3720703125px;
       order: 1;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% * 0.666667 - 18px) !important;
     }
 
     .football__categories_header {
@@ -136,10 +149,14 @@
     background-color: #EFF8E2;
 
     @media (min-width: 426px) {
-      width: calc(100% - 66.67% - 14px) !important;
+      width: calc(100% - 66.6667% - 14px) !important;
       background-image: url(../img/images/categories/big/boots.png);
       background-size: 217.35716247558594px;
       order: 2;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% - 66.6667% - 18px) !important;
     }
 
     .football__categories_header {
@@ -154,10 +171,14 @@
     background-color: #FFF3ED;
 
     @media (min-width: 426px) {
-      width: calc(100% / 3 - 14px ) !important;
+      width: calc(100% / 3 - 14px) !important;
       background-image: url(../img/images/categories/big/accessories.png);
       background-size: 181.48px;
       order: 3;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 3 - 18px) !important;
     }
 
     .football__categories_header {
@@ -172,10 +193,14 @@
     background-color: #EBFDFB;
 
     @media (min-width: 426px) {
-      width: calc(100% / 3 - 14px ) !important;
+      width: calc(100% / 3 - 14px) !important;
       background-image: url(../img/images/categories/big/balls.png);
       background-size: 178.24px;
       order: 5;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 3 - 18px) !important;
     }
   }
 
@@ -186,10 +211,14 @@
     background-color: #F4F4F4;
 
     @media (min-width: 426px) {
-      width: calc(100% / 3 - 14px ) !important;
+      width: calc(100% / 3 - 14px) !important;
       background-image: url(../img/images/categories/big/bags.png);
       background-size: 148.43px;
       order: 4;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 3 - 18px) !important;
     }
   }
 
@@ -200,10 +229,14 @@
     background-color: #FFF3FF;
 
     @media (min-width: 426px) {
-      width: calc(100% / 2 - 14px ) !important;
+      width: calc(100% / 2 - 14px) !important;
       background-image: url(../img/images/categories/big/inventory.png);
       background-size: 179.49px;
       order: 6;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 2 - 18px) !important;
     }
   }
 
@@ -218,6 +251,10 @@
       background-image: url(../img/images/categories/big/medicine.png);
       background-size: 180.89px;
       order: 7;
+    }
+
+    @media (min-width: 1024px) {
+      width: calc(100% / 2 - 18px) !important;
     }
   }
 }

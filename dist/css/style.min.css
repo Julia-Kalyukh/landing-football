@@ -124,7 +124,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 1024px;
 }
 
 .invisible {
@@ -153,6 +153,13 @@ h1 {
     letter-spacing: 2.5px;
   }
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 4px;
+  }
+}
 
 h2 {
   font-size: 18px;
@@ -164,6 +171,12 @@ h2 {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 2.2px;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 26px;
+    letter-spacing: 4px;
   }
 }
 
@@ -204,6 +217,11 @@ a {
     margin: 50px 0 88px;
   }
 }
+@media (min-width: 1024px) {
+  .football {
+    margin-bottom: 41px;
+  }
+}
 
 .football__header {
   margin: 0 0 22px 15px;
@@ -211,6 +229,11 @@ a {
 @media (min-width: 426px) {
   .football__header {
     margin: 0 0 24px 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .football__header {
+    margin: 0 53px 32px 53px;
   }
 }
 
@@ -221,6 +244,11 @@ a {
 @media (min-width: 426px) {
   .football__nav {
     margin-left: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .football__nav {
+    margin-left: 53px;
   }
 }
 .football__nav ul {
@@ -276,6 +304,12 @@ a {
     margin: 80px 25px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__brands {
+    height: 40px;
+    margin: 82px 54px;
+  }
+}
 .footbal__brands .footbal__brands_item {
   margin-right: 35px;
 }
@@ -289,6 +323,17 @@ a {
   }
   .footbal__brands .footbal__brands_item:last-child {
     margin-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__brands .footbal__brands_item {
+    transform: scale(1.33);
+  }
+  .footbal__brands .footbal__brands_item:first-child {
+    margin-left: 14px;
+  }
+  .footbal__brands .footbal__brands_item:last-child {
+    margin-right: 5px;
   }
 }
 .footbal__brands .footbal__brands_item svg {
@@ -313,6 +358,11 @@ a {
     overflow: hidden;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__brands_wrapper {
+    height: 40px;
+  }
+}
 
 /* КАТЕГОРИИ ТОВАРОВ */
 .football__categories {
@@ -324,6 +374,11 @@ a {
 @media (min-width: 426px) {
   .football__categories {
     margin: 25px 18px -7px 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .football__categories {
+    margin: 35.5px 44px -6.5px 44px;
   }
 }
 
@@ -407,6 +462,12 @@ a {
     box-sizing: content-box;
   }
 }
+@media (min-width: 1024px) {
+  .football__categories_item {
+    height: 392px;
+    margin: 6.5px 9px;
+  }
+}
 .football__categories_item:not(:first-child) {
   width: calc(50% - 9px);
 }
@@ -424,10 +485,15 @@ a {
 }
 @media (min-width: 426px) {
   .football__categories_item--form {
-    width: calc(66.67% - 14px) !important;
+    width: calc(66.6667% - 14px) !important;
     background-image: url(../img/images/categories/big/form.png);
     background-size: 255.3720703125px;
     order: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .football__categories_item--form {
+    width: calc(66.6667% - 18px) !important;
   }
 }
 .football__categories_item--form .football__categories_header {
@@ -450,10 +516,15 @@ a {
 }
 @media (min-width: 426px) {
   .football__categories_item--boots {
-    width: calc(33.33% - 14px) !important;
+    width: calc(33.3333% - 14px) !important;
     background-image: url(../img/images/categories/big/boots.png);
     background-size: 217.3571624756px;
     order: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .football__categories_item--boots {
+    width: calc(33.3333% - 18px) !important;
   }
 }
 .football__categories_item--boots .football__categories_header {
@@ -473,6 +544,11 @@ a {
     order: 3;
   }
 }
+@media (min-width: 1024px) {
+  .football__categories_item--accessories {
+    width: calc(33.3333333333% - 18px) !important;
+  }
+}
 .football__categories_item--accessories .football__categories_header {
   margin-bottom: 5.74px;
 }
@@ -490,6 +566,11 @@ a {
     order: 5;
   }
 }
+@media (min-width: 1024px) {
+  .football__categories_item--balls {
+    width: calc(33.3333333333% - 18px) !important;
+  }
+}
 .football__categories_item--bags {
   background-image: url(../img/images/categories/bags.png);
   background-size: 90.37px;
@@ -502,6 +583,11 @@ a {
     background-image: url(../img/images/categories/big/bags.png);
     background-size: 148.43px;
     order: 4;
+  }
+}
+@media (min-width: 1024px) {
+  .football__categories_item--bags {
+    width: calc(33.3333333333% - 18px) !important;
   }
 }
 .football__categories_item--inventory {
@@ -518,6 +604,11 @@ a {
     order: 6;
   }
 }
+@media (min-width: 1024px) {
+  .football__categories_item--inventory {
+    width: calc(50% - 18px) !important;
+  }
+}
 .football__categories_item--medicine {
   background-image: url(../img/images/categories/medicine.png);
   background-size: 96px;
@@ -532,6 +623,11 @@ a {
     order: 7;
   }
 }
+@media (min-width: 1024px) {
+  .football__categories_item--medicine {
+    width: calc(50% - 18px) !important;
+  }
+}
 
 /* ссылки */
 .footbal__links {
@@ -540,6 +636,11 @@ a {
 @media (min-width: 426px) {
   .footbal__links {
     margin: 0 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__links {
+    margin: 0 53px;
   }
 }
 
@@ -577,6 +678,11 @@ a {
     height: 36px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__links_item {
+    padding-right: 20px;
+  }
+}
 
 /* PRO-эксперты рекомендуют */
 .footbal__slider {
@@ -593,12 +699,23 @@ a {
     margin-bottom: 80px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__slider {
+    margin-bottom: 110px;
+    padding: 110px 0;
+  }
+}
 .footbal__slider--recommendations {
   margin-top: 72px;
 }
 @media (min-width: 426px) {
   .footbal__slider--recommendations {
     margin-top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider--recommendations {
+    margin-top: 110px;
   }
 }
 @media (min-width: 426px) {
@@ -615,6 +732,22 @@ a {
     margin-bottom: 40px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__slider--services .footbal__slider_descr .footbal__slider_header {
+    margin-top: 112px;
+    margin-left: 53px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider--services .footbal__slider_descr .footbal__links {
+    margin-left: 53px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider--services .footbal__slider_descr #photoLink02 {
+    margin-right: 53px;
+  }
+}
 
 .footbal__slider_img {
   width: 100%;
@@ -627,10 +760,24 @@ a {
     height: 620px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__slider_img {
+    width: 425px;
+    height: 603px;
+  }
+}
 
 @media (min-width: 426px) {
   .footbal__slider_descr {
     margin-right: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider_descr {
+    margin-right: 0;
+  }
+  .footbal__slider_descr .footbal__links {
+    margin-left: 96px;
   }
 }
 .footbal__slider_descr .footbal__slider_header {
@@ -639,6 +786,11 @@ a {
 @media (min-width: 426px) {
   .footbal__slider_descr .footbal__slider_header {
     margin: 23px 25px 8px 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider_descr .footbal__slider_header {
+    margin: 0 25px 8px 96px;
   }
 }
 .footbal__slider_descr .footbal__slider_header svg {
@@ -661,6 +813,11 @@ a {
     margin: 0 0 40px 25px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__slider_descr .footbal__slider_subheader {
+    margin-left: 96px;
+  }
+}
 
 /* PRO-эксперты */
 .footbal__experts {
@@ -677,7 +834,18 @@ a {
   }
   .footbal__experts .footbal__slider_header {
     margin: 163px 0 20px 25px;
-    margin-top: 163px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__experts .footbal__slider_descr {
+    min-width: 350px;
+    margin-right: 96px;
+  }
+  .footbal__experts .footbal__slider_header {
+    margin: 218px 0 20px 53px;
+  }
+  .footbal__experts .footbal__slider_subheader {
+    margin-left: 53px;
   }
 }
 
@@ -707,6 +875,13 @@ a {
     height: 666px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__slider_box figure {
+    min-width: 378px;
+    height: 658px;
+    margin-right: 18px;
+  }
+}
 .footbal__slider_box figure img {
   width: 100%;
 }
@@ -718,6 +893,11 @@ a {
 @media (min-width: 426px) {
   .footbal__slider_box figure figcaption {
     height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__slider_box figure figcaption {
+    margin: 40px 48px 48px;
   }
 }
 .footbal__slider_box figure figcaption h3 {
@@ -745,6 +925,11 @@ a {
     margin: 0 0 20px 29px;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__media_header {
+    margin-left: 53px;
+  }
+}
 
 .footbal__media_slider-box {
   display: flex;
@@ -756,9 +941,8 @@ a {
 }
 @media (min-width: 426px) {
   .footbal__media_slider-box {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 0;
     width: 100%;
     overflow-x: hidden;
@@ -776,6 +960,11 @@ a {
     height: auto;
   }
 }
+@media (min-width: 1024px) {
+  .footbal__media_slider {
+    margin: 0 53px;
+  }
+}
 .footbal__media_slider figure {
   min-width: 260px;
   max-width: 260px;
@@ -784,15 +973,45 @@ a {
 }
 @media (min-width: 426px) {
   .footbal__media_slider figure {
-    max-width: 100%;
+    max-width: calc(50% - 7px);
+    min-width: calc(50% - 7px);
     margin-right: 0;
   }
-  .footbal__media_slider figure:not(:nth-child(-2n)) img {
+}
+@media (min-width: 426px) {
+  .footbal__media_slider figure:nth-child(-n+2) {
+    max-width: calc(50% - 9px);
+    min-width: calc(50% - 9px);
+    margin-bottom: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__media_slider figure:not(:nth-child(-n+2)) {
+    max-width: calc(25% - 9px);
+    min-width: calc(25% - 9px);
+  }
+}
+@media (min-width: 426px) {
+  .footbal__media_slider figure:not(:nth-child(-n+2)) img {
     height: 352px;
   }
+}
+@media (min-width: 1024px) {
+  .footbal__media_slider figure:not(:nth-child(-n+2)) img {
+    height: 216px;
+  }
+}
+@media (min-width: 1024px) {
+  .footbal__media_slider figure:first-child {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 426px) {
   .footbal__media_slider figure:first-child img {
     height: 352px;
   }
+}
+@media (min-width: 426px) {
   .footbal__media_slider figure:nth-child(2) img {
     height: auto;
   }

@@ -10,7 +10,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 1024px;
 }
 
 .invisible {
@@ -37,6 +37,12 @@ h1 {
     line-height: 40px;
     letter-spacing: 2.5px;
   }
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 4px;
+  }
 }
 
 h2 {
@@ -48,6 +54,11 @@ h2 {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 2.2px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 26px;
+    letter-spacing: 4px;
   }
 }
 

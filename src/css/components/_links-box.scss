@@ -5,6 +5,10 @@
   @media (min-width: 426px) {
     margin: 0 25px;
   }
+
+  @media (min-width: 1024px) {
+    margin: 0 53px;
+  }
 }
 
 .footbal__links_item {
@@ -42,5 +46,9 @@
       width: 36px;
       height: 36px;
     }
+  }
+
+  @media (min-width: 1024px) {
+    padding-right: 20px;
   }
 }
