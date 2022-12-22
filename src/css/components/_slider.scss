@@ -22,6 +22,10 @@
     padding: auto;
   }
 
+  @media (min-width: 1920px) {
+    padding-top: 200px;
+  }
+
   &--recommendations {
     margin-top: 72px;
 
@@ -37,6 +41,11 @@
       margin-top: 140px;
       margin-bottom: 241px;
       padding-bottom: 228px;
+    }
+
+    @media (min-width: 1920px) {
+      margin-bottom: 267px;
+      padding-bottom: 446px;
     }
 
     .footbal__slider_descr {
@@ -69,6 +78,13 @@
         margin-right: 135px;
         margin-top: 92px;
       }
+
+      @media (min-width: 1920px) {
+        margin-left: 152px;
+        margin-right: 174px;
+        margin-top: 102px;
+        width: 774px;
+      }
     }
   }
 
@@ -80,6 +96,11 @@
     @media (min-width: 1440px) {
       padding-bottom: 117px;
       margin-bottom: 250px;
+    }
+
+    @media (min-width: 1920px) {
+      padding-bottom: 438px;
+      margin-bottom: 204px;
     }
 
     .footbal__slider_descr {
@@ -95,9 +116,15 @@
         margin-left: 53px;
       }
 
-      @media (min-width: 1024px) {
+      @media (min-width: 1440px) {
         margin-top: 185px;
         margin-left: 135px;
+      }
+
+      @media (min-width: 1920px) {
+        margin-top: 102px;
+        margin-left: 177px;
+        min-width: 642px;
       }
     }
 
@@ -114,6 +141,12 @@
         right: 137px;
         width: 574px;
         height: 816px;
+      }
+
+      @media (min-width: 1920px) {
+        right: 176px;
+        width: 774px;
+        height: 1100px;
       }
     }
 
@@ -149,6 +182,11 @@
     width: 612px;
     height: 869px;
   }
+
+  @media (min-width: 1920px) {
+    width: 819px;
+    height: 1163px;
+  }
 }
 
 .footbal__slider_header {
@@ -172,6 +210,11 @@
       width: 88px;
       height: 30px;
     }
+
+    @media (min-width: 1920px) {
+      width: 106px;
+      height: 36px;
+    }
   }
 }
 
@@ -184,6 +227,10 @@
   @media (min-width: 426px) {
     margin: auto;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
   }
 }
 
@@ -216,11 +263,21 @@
       margin-left: 135px;
       min-width: 297px;
     }
+
+    @media (min-width: 1920px) {
+      margin-right: 208px;
+      margin-left: 177px;
+      min-width: 320px;
+    }
   }
 
   .footbal__slider_header {
     @media (min-width: 426px) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 28px;
     }
   }
 }
@@ -255,6 +312,12 @@
       margin-right: 18px;
     }
 
+    @media (min-width: 1920px) {
+      min-width: 510px;
+      height: 597px;
+      margin-right: 18px;
+    }
+
     img {
       width: 100%;
     }
@@ -279,6 +342,12 @@
         line-height: 22px;
         letter-spacing: 1.3px;
         text-transform: uppercase;
+
+        @media (min-width: 1920px) {
+          font-size: 20px;
+          line-height: 32px;
+          letter-spacing: 3px;
+        }
       }
 
       p {
@@ -411,6 +480,10 @@
       margin: 14px 0 4px;
       width: 90%;
       color: #000;
+
+      @media (max-width: 1920px) {
+        margin: 18px 0 6px;
+      }
     }
 
     .text-date {

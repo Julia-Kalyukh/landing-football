@@ -16,6 +16,10 @@
     margin-top: 87px;
   }
 
+  @media (min-width: 1920px) {
+    margin-top: 140px;
+  }
+
   #video {
     width: 100%;
     object-fit: cover;

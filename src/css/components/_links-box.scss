@@ -5,10 +5,6 @@
   @media (min-width: 426px) {
     margin: auto;
   }
-
-  // @media (min-width: 1024px) {
-  //   margin: 0 53px;
-  // }
 }
 
 .footbal__links_item {
@@ -32,7 +28,7 @@
   }
 
   span {
-    max-width: 75%;
+    max-width: 86%;
   }
 
   @media (min-width: 426px) {
@@ -56,5 +52,12 @@
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 3px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 48px 0;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 4px;
   }
 }
