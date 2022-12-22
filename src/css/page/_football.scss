@@ -1,8 +1,16 @@
 /* ЛЕНДИНГ "ВСЕ ДЛЯ ФУТБОЛА" */
 .football {
   margin: 37px 0 94px;
+
+  @media (min-width: 426px) {
+    margin: 50px 0 88px;
+  }
 }
 
 .football__header {
   margin: 0 0 22px 15px;
+
+  @media (min-width: 426px) {
+    margin: 0 0 24px 25px;
+  }
 }

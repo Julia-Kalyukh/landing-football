@@ -1,6 +1,10 @@
 /* ссылки */
 .footbal__links {
   margin: 0 18px;
+
+  @media (min-width: 426px) {
+    margin: 0 25px;
+  }
 }
 
 .footbal__links_item {
@@ -25,5 +29,18 @@
 
   span {
     max-width: 75%;
+  }
+
+  @media (min-width: 426px) {
+    padding: 32px 10px 32px 0;
+
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
   }
 }

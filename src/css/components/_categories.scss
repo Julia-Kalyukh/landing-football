@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (min-width: 426px) {
+    margin: 25px 18px -7px 18px;
+  }
 }
 
 
@@ -11,11 +15,19 @@
   width: 100%;
   position: absolute;
   bottom: 12px;
+
+  @media (min-width: 426px) {
+    bottom: 24px
+  }
 }
 
 .football__categories_header {
   margin: 0;
   margin-left: 12px;
+
+  @media (min-width: 426px) {
+    margin-left: 24px;
+  }
 }
 
 .football__categories_tags {
@@ -24,10 +36,14 @@
   flex-wrap: wrap;
   margin-left: 12px;
 
+  @media (min-width: 426px) {
+    margin-left: 24px;
+  }
+
   .categories_tag {
     display: inline-block;
     padding: 2px 5.7px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     font-weight: 400;
     font-size: 6.69666px;
     line-height: 11px;
@@ -36,8 +52,18 @@
     border-radius: 1.91333px;
     cursor: pointer;
 
+    @media (min-width: 426px) {
+      padding: 6px 12px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
     &:not(:last-child) {
       margin-right: 2.87px;
+
+      @media (min-width: 426px) {
+        margin-right: 6px;
+      }
     }
 
     &--close {
@@ -57,8 +83,18 @@
   margin: 4.5px;
   background-repeat: no-repeat;
 
+  @media (min-width: 426px) {
+    height: 312px;
+    margin: 7px;
+    box-sizing: content-box;
+  }
+
   &:not(:first-child) {
     width: calc(50% - 9px);
+
+    @media (min-width: 426px) {
+      width: auto;
+    }
   }
 
   &--form {
@@ -67,6 +103,13 @@
     background-size: contain;
     background-position: 67.5% 0;
     background-color: #ECF7FF;
+
+    @media (min-width: 426px) {
+      width: calc(66.67% - 14px) !important;
+      background-image: url(../img/images/categories/big/form.png);
+      background-size: 255.3720703125px;
+      order: 1;
+    }
 
     .football__categories_header {
       margin-bottom: 12px;
@@ -92,6 +135,13 @@
     background-position: 50% 0;
     background-color: #EFF8E2;
 
+    @media (min-width: 426px) {
+      width: calc(100% - 66.67% - 14px) !important;
+      background-image: url(../img/images/categories/big/boots.png);
+      background-size: 217.35716247558594px;
+      order: 2;
+    }
+
     .football__categories_header {
       margin-bottom: 5.74px;
     }
@@ -103,6 +153,13 @@
     background-position: 50% 6px;
     background-color: #FFF3ED;
 
+    @media (min-width: 426px) {
+      width: calc(100% / 3 - 14px ) !important;
+      background-image: url(../img/images/categories/big/accessories.png);
+      background-size: 181.48px;
+      order: 3;
+    }
+
     .football__categories_header {
       margin-bottom: 5.74px;
     }
@@ -113,6 +170,13 @@
     background-size: 108.52px;
     background-position: 50% 6.31px;
     background-color: #EBFDFB;
+
+    @media (min-width: 426px) {
+      width: calc(100% / 3 - 14px ) !important;
+      background-image: url(../img/images/categories/big/balls.png);
+      background-size: 178.24px;
+      order: 5;
+    }
   }
 
   &--bags {
@@ -120,6 +184,13 @@
     background-size: 90.37px;
     background-position: 50% 11.5px;
     background-color: #F4F4F4;
+
+    @media (min-width: 426px) {
+      width: calc(100% / 3 - 14px ) !important;
+      background-image: url(../img/images/categories/big/bags.png);
+      background-size: 148.43px;
+      order: 4;
+    }
   }
 
   &--inventory {
@@ -127,6 +198,13 @@
     background-size: 95.19px;
     background-position: 50% -1.48px;
     background-color: #FFF3FF;
+
+    @media (min-width: 426px) {
+      width: calc(100% / 2 - 14px ) !important;
+      background-image: url(../img/images/categories/big/inventory.png);
+      background-size: 179.49px;
+      order: 6;
+    }
   }
 
   &--medicine {
@@ -134,5 +212,12 @@
     background-size: 96px;
     background-position: 50% 31.17px;
     background-color: #ECF1FF;
+
+    @media (min-width: 426px) {
+      width: calc(100% / 2 - 14px ) !important;
+      background-image: url(../img/images/categories/big/medicine.png);
+      background-size: 180.89px;
+      order: 7;
+    }
   }
 }

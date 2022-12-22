@@ -124,6 +124,7 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: 768px;
 }
 
 .invisible {
@@ -145,17 +146,38 @@ h1 {
   line-height: 34px;
   letter-spacing: 2px;
 }
+@media (min-width: 426px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 2.5px;
+  }
+}
 
 h2 {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 1.6px;
 }
+@media (min-width: 426px) {
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 2.2px;
+  }
+}
 
 h3 {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1.3px;
+}
+@media (min-width: 426px) {
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+  }
 }
 
 h4 {
@@ -177,14 +199,29 @@ a {
 .football {
   margin: 37px 0 94px;
 }
+@media (min-width: 426px) {
+  .football {
+    margin: 50px 0 88px;
+  }
+}
 
 .football__header {
   margin: 0 0 22px 15px;
+}
+@media (min-width: 426px) {
+  .football__header {
+    margin: 0 0 24px 25px;
+  }
 }
 
 /* НАВИГАЦИЯ */
 .football__nav {
   margin-left: 12px;
+}
+@media (min-width: 426px) {
+  .football__nav {
+    margin-left: 25px;
+  }
 }
 .football__nav ul {
   margin: 0;
@@ -201,8 +238,20 @@ a {
   font-size: 12px;
   line-height: 16px;
 }
+@media (min-width: 426px) {
+  .football__nav ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .football__nav ul li:not(:last-child) {
   margin-right: 24px;
+}
+@media (min-width: 426px) {
+  .football__nav ul li:not(:last-child) {
+    margin-right: 32px;
+  }
 }
 .football__nav ul li a {
   display: flex;
@@ -221,8 +270,26 @@ a {
   margin: 72px 0 72px 16px;
   overflow-y: hidden;
 }
+@media (min-width: 426px) {
+  .footbal__brands {
+    height: 36px;
+    margin: 80px 25px;
+  }
+}
 .footbal__brands .footbal__brands_item {
   margin-right: 35px;
+}
+@media (min-width: 426px) {
+  .footbal__brands .footbal__brands_item {
+    margin-right: 105px;
+    transform: scale(1.2);
+  }
+  .footbal__brands .footbal__brands_item:first-child {
+    margin-left: 12px;
+  }
+  .footbal__brands .footbal__brands_item:last-child {
+    margin-right: 0;
+  }
 }
 .footbal__brands .footbal__brands_item svg {
   fill: #333333;
@@ -237,6 +304,15 @@ a {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+@media (min-width: 426px) {
+  .footbal__brands_wrapper {
+    height: 36px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+}
 
 /* КАТЕГОРИИ ТОВАРОВ */
 .football__categories {
@@ -245,16 +321,31 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media (min-width: 426px) {
+  .football__categories {
+    margin: 25px 18px -7px 18px;
+  }
+}
 
 .football__categories_box {
   width: 100%;
   position: absolute;
   bottom: 12px;
 }
+@media (min-width: 426px) {
+  .football__categories_box {
+    bottom: 24px;
+  }
+}
 
 .football__categories_header {
   margin: 0;
   margin-left: 12px;
+}
+@media (min-width: 426px) {
+  .football__categories_header {
+    margin-left: 24px;
+  }
 }
 
 .football__categories_tags {
@@ -263,10 +354,15 @@ a {
   flex-wrap: wrap;
   margin-left: 12px;
 }
+@media (min-width: 426px) {
+  .football__categories_tags {
+    margin-left: 24px;
+  }
+}
 .football__categories_tags .categories_tag {
   display: inline-block;
   padding: 2px 5.7px;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   font-weight: 400;
   font-size: 6.69666px;
   line-height: 11px;
@@ -275,8 +371,20 @@ a {
   border-radius: 1.91333px;
   cursor: pointer;
 }
+@media (min-width: 426px) {
+  .football__categories_tags .categories_tag {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
 .football__categories_tags .categories_tag:not(:last-child) {
   margin-right: 2.87px;
+}
+@media (min-width: 426px) {
+  .football__categories_tags .categories_tag:not(:last-child) {
+    margin-right: 6px;
+  }
 }
 .football__categories_tags .categories_tag--close {
   background: none;
@@ -292,8 +400,20 @@ a {
   margin: 4.5px;
   background-repeat: no-repeat;
 }
+@media (min-width: 426px) {
+  .football__categories_item {
+    height: 312px;
+    margin: 7px;
+    box-sizing: content-box;
+  }
+}
 .football__categories_item:not(:first-child) {
   width: calc(50% - 9px);
+}
+@media (min-width: 426px) {
+  .football__categories_item:not(:first-child) {
+    width: auto;
+  }
 }
 .football__categories_item--form {
   width: 100% !important;
@@ -301,6 +421,14 @@ a {
   background-size: contain;
   background-position: 67.5% 0;
   background-color: #ECF7FF;
+}
+@media (min-width: 426px) {
+  .football__categories_item--form {
+    width: calc(66.67% - 14px) !important;
+    background-image: url(../img/images/categories/big/form.png);
+    background-size: 255.3720703125px;
+    order: 1;
+  }
 }
 .football__categories_item--form .football__categories_header {
   margin-bottom: 12px;
@@ -320,6 +448,14 @@ a {
   background-position: 50% 0;
   background-color: #EFF8E2;
 }
+@media (min-width: 426px) {
+  .football__categories_item--boots {
+    width: calc(33.33% - 14px) !important;
+    background-image: url(../img/images/categories/big/boots.png);
+    background-size: 217.3571624756px;
+    order: 2;
+  }
+}
 .football__categories_item--boots .football__categories_header {
   margin-bottom: 5.74px;
 }
@@ -328,6 +464,14 @@ a {
   background-size: 110.13px;
   background-position: 50% 6px;
   background-color: #FFF3ED;
+}
+@media (min-width: 426px) {
+  .football__categories_item--accessories {
+    width: calc(33.3333333333% - 14px) !important;
+    background-image: url(../img/images/categories/big/accessories.png);
+    background-size: 181.48px;
+    order: 3;
+  }
 }
 .football__categories_item--accessories .football__categories_header {
   margin-bottom: 5.74px;
@@ -338,11 +482,27 @@ a {
   background-position: 50% 6.31px;
   background-color: #EBFDFB;
 }
+@media (min-width: 426px) {
+  .football__categories_item--balls {
+    width: calc(33.3333333333% - 14px) !important;
+    background-image: url(../img/images/categories/big/balls.png);
+    background-size: 178.24px;
+    order: 5;
+  }
+}
 .football__categories_item--bags {
   background-image: url(../img/images/categories/bags.png);
   background-size: 90.37px;
   background-position: 50% 11.5px;
   background-color: #F4F4F4;
+}
+@media (min-width: 426px) {
+  .football__categories_item--bags {
+    width: calc(33.3333333333% - 14px) !important;
+    background-image: url(../img/images/categories/big/bags.png);
+    background-size: 148.43px;
+    order: 4;
+  }
 }
 .football__categories_item--inventory {
   background-image: url(../img/images/categories/inventory.png);
@@ -350,16 +510,37 @@ a {
   background-position: 50% -1.48px;
   background-color: #FFF3FF;
 }
+@media (min-width: 426px) {
+  .football__categories_item--inventory {
+    width: calc(50% - 14px) !important;
+    background-image: url(../img/images/categories/big/inventory.png);
+    background-size: 179.49px;
+    order: 6;
+  }
+}
 .football__categories_item--medicine {
   background-image: url(../img/images/categories/medicine.png);
   background-size: 96px;
   background-position: 50% 31.17px;
   background-color: #ECF1FF;
 }
+@media (min-width: 426px) {
+  .football__categories_item--medicine {
+    width: calc(50% - 14px) !important;
+    background-image: url(../img/images/categories/big/medicine.png);
+    background-size: 180.89px;
+    order: 7;
+  }
+}
 
 /* ссылки */
 .footbal__links {
   margin: 0 18px;
+}
+@media (min-width: 426px) {
+  .footbal__links {
+    margin: 0 25px;
+  }
 }
 
 .footbal__links_item {
@@ -384,6 +565,18 @@ a {
 .footbal__links_item span {
   max-width: 75%;
 }
+@media (min-width: 426px) {
+  .footbal__links_item {
+    padding: 32px 10px 32px 0;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+  }
+  .footbal__links_item svg {
+    width: 36px;
+    height: 36px;
+  }
+}
 
 /* PRO-эксперты рекомендуют */
 .footbal__slider {
@@ -391,11 +584,36 @@ a {
   padding-bottom: 72px;
   margin-bottom: 72px;
 }
+@media (min-width: 426px) {
+  .footbal__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0;
+    margin-bottom: 80px;
+  }
+}
 .footbal__slider--recommendations {
   margin-top: 72px;
 }
+@media (min-width: 426px) {
+  .footbal__slider--recommendations {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 426px) {
+  .footbal__slider--services {
+    flex-direction: row-reverse;
+  }
+}
 .footbal__slider--services .footbal__slider_descr .footbal__slider_header {
   margin-bottom: 19px;
+}
+@media (min-width: 426px) {
+  .footbal__slider--services .footbal__slider_descr .footbal__slider_header {
+    margin-top: 106px;
+    margin-bottom: 40px;
+  }
 }
 
 .footbal__slider_img {
@@ -403,12 +621,34 @@ a {
   height: 103.75%;
   object-fit: cover;
 }
+@media (min-width: 426px) {
+  .footbal__slider_img {
+    width: 334px;
+    height: 620px;
+  }
+}
 
+@media (min-width: 426px) {
+  .footbal__slider_descr {
+    margin-right: 25px;
+  }
+}
 .footbal__slider_descr .footbal__slider_header {
   margin: 40px 0 3px 12px;
 }
+@media (min-width: 426px) {
+  .footbal__slider_descr .footbal__slider_header {
+    margin: 23px 25px 8px 25px;
+  }
+}
 .footbal__slider_descr .footbal__slider_header svg {
   vertical-align: text-bottom;
+}
+@media (min-width: 426px) {
+  .footbal__slider_descr .footbal__slider_header svg {
+    width: 80px;
+    height: 27px;
+  }
 }
 .footbal__slider_descr .footbal__slider_subheader {
   display: inline-block;
@@ -416,11 +656,29 @@ a {
   font-size: 14px;
   line-height: 24px;
 }
+@media (min-width: 426px) {
+  .footbal__slider_descr .footbal__slider_subheader {
+    margin: 0 0 40px 25px;
+  }
+}
 
 /* PRO-эксперты */
 .footbal__experts {
   overflow-y: hidden;
   width: 100%;
+}
+@media (min-width: 426px) {
+  .footbal__experts {
+    display: flex;
+  }
+  .footbal__experts .footbal__slider_descr {
+    margin-right: 57px;
+    min-width: 273px;
+  }
+  .footbal__experts .footbal__slider_header {
+    margin: 163px 0 20px 25px;
+    margin-top: 163px;
+  }
 }
 
 .footbal__slider_box {
@@ -431,6 +689,11 @@ a {
   margin: -6px 0 0 12px;
   overflow-y: auto;
 }
+@media (min-width: 426px) {
+  .footbal__slider_box {
+    margin: 0;
+  }
+}
 .footbal__slider_box figure {
   min-width: 283px;
   height: 516px;
@@ -439,6 +702,11 @@ a {
   margin: 0;
   margin-right: 14px;
 }
+@media (min-width: 426px) {
+  .footbal__slider_box figure {
+    height: 666px;
+  }
+}
 .footbal__slider_box figure img {
   width: 100%;
 }
@@ -446,6 +714,11 @@ a {
   margin: 24px 36px 30px;
   height: 320px;
   overflow-y: hidden;
+}
+@media (min-width: 426px) {
+  .footbal__slider_box figure figcaption {
+    height: auto;
+  }
 }
 .footbal__slider_box figure figcaption h3 {
   margin: 0 0 12px;
@@ -467,6 +740,11 @@ a {
 .footbal__media_header {
   margin: 0 16px 16px;
 }
+@media (min-width: 426px) {
+  .footbal__media_header {
+    margin: 0 0 20px 29px;
+  }
+}
 
 .footbal__media_slider-box {
   display: flex;
@@ -476,17 +754,48 @@ a {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+@media (min-width: 426px) {
+  .footbal__media_slider-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 14px;
+    padding-bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
 
 .footbal__media_slider {
   height: 370px;
   overflow: hidden;
   margin-left: 12px;
 }
+@media (min-width: 426px) {
+  .footbal__media_slider {
+    margin: 0 25px;
+    height: auto;
+  }
+}
 .footbal__media_slider figure {
   min-width: 260px;
   max-width: 260px;
   margin: 0;
   margin-right: 8px;
+}
+@media (min-width: 426px) {
+  .footbal__media_slider figure {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .footbal__media_slider figure:not(:nth-child(-2n)) img {
+    height: 352px;
+  }
+  .footbal__media_slider figure:first-child img {
+    height: 352px;
+  }
+  .footbal__media_slider figure:nth-child(2) img {
+    height: auto;
+  }
 }
 .footbal__media_slider figure h4 {
   margin: 14px 0 4px;
@@ -510,6 +819,11 @@ a {
   position: relative;
   width: 100%;
   margin: 72px 0 0;
+}
+@media (min-width: 426px) {
+  .video {
+    margin: 80px 0 0;
+  }
 }
 .video #video {
   width: 100%;

@@ -2,6 +2,12 @@
 .football__nav {
   margin-left: 12px;
 
+  // @media (min-width: 426px) and (max-width: 900px) {
+  
+  @media (min-width: 426px) {
+    margin-left: 25px;
+  }
+
   ul {
     margin: 0;
     margin-top: -8px;
@@ -17,8 +23,18 @@
       font-size: 12px;
       line-height: 16px;
 
+      @media (min-width: 426px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
       &:not(:last-child) {
         margin-right: 24px;
+
+        @media (min-width: 426px) {
+          margin-right: 32px;
+        }
       }
 
       a {

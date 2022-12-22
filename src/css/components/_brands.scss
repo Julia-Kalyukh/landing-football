@@ -4,8 +4,27 @@
   margin: 72px 0 72px 16px;
   overflow-y: hidden;
 
+
+  @media (min-width: 426px) {
+    height: 36px;
+    margin: 80px 25px;
+  }
+
   .footbal__brands_item {
     margin-right: 35px;
+
+    @media (min-width: 426px) {
+      margin-right: 105px;
+      transform: scale(1.2);
+
+      &:first-child {
+        margin-left: 12px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     svg {
       fill: #333333;
@@ -22,4 +41,12 @@
   padding-bottom: 20px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+
+  @media (min-width: 426px) {
+    height: 36px;
+    align-items:flex-end;
+    justify-content: space-between;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
 }
