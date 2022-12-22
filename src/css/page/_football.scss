@@ -9,16 +9,21 @@
   @media (min-width: 1024px) {
     margin-bottom: 41px;
   }
+
+  @media (min-width: 1440px) {
+    margin: 60px 0 114px;
+  }
 }
 
 .football__header {
-  margin: 0 0 22px 15px;
+  margin-left: 15px;
+  margin-bottom: 22px;
 
   @media (min-width: 426px) {
-    margin: 0 0 24px 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 1024px) {
-    margin: 0 53px 32px 53px;
+    margin-bottom: 32px;
   }
 }

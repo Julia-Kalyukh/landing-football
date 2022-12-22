@@ -3,12 +3,12 @@
   margin: 0 18px;
 
   @media (min-width: 426px) {
-    margin: 0 25px;
+    margin: auto;
   }
 
-  @media (min-width: 1024px) {
-    margin: 0 53px;
-  }
+  // @media (min-width: 1024px) {
+  //   margin: 0 53px;
+  // }
 }
 
 .footbal__links_item {
@@ -50,5 +50,11 @@
 
   @media (min-width: 1024px) {
     padding-right: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 3px;
   }
 }

@@ -1,5 +1,6 @@
 /* PRO-эксперты рекомендуют */
 .footbal__slider {
+  position: relative;
   background-color: #F7F7F7;
   padding-bottom: 72px;
   margin-bottom: 72px;
@@ -17,6 +18,10 @@
     padding: 110px 0;
   }
 
+  @media (min-width: 1440px) {
+    padding: auto;
+  }
+
   &--recommendations {
     margin-top: 72px;
 
@@ -27,37 +32,98 @@
     @media (min-width: 1024px) {
       margin-top: 110px;
     }
+
+    @media (min-width: 1440px) {
+      margin-top: 140px;
+      margin-bottom: 241px;
+      padding-bottom: 228px;
+    }
+
+    .footbal__slider_descr {
+      @media (min-width: 426px) {
+        margin-left: 57px;
+        margin-right: 27px;
+        margin-top: 23px;
+
+        .footbal__slider_header {
+          width: 90%;
+        }
+
+        .footbal__slider_subheader {
+          margin-bottom: 30px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        margin-left: 96px;
+        margin-right: 53px;
+        margin-top: 0;
+
+        .footbal__slider_subheader {
+          margin-bottom: 40px;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        margin-left: 117px;
+        margin-right: 135px;
+        margin-top: 92px;
+      }
+    }
   }
 
   &--services {
     @media (min-width: 426px) {
       flex-direction: row-reverse;
     }
+
+    @media (min-width: 1440px) {
+      padding-bottom: 117px;
+      margin-bottom: 250px;
+    }
+
     .footbal__slider_descr {
-      .footbal__slider_header {
-        margin-bottom: 19px;
-
-        @media (min-width: 426px) {
-          margin-top: 106px;
-          margin-bottom: 40px;
-        }
-
-        @media (min-width: 1024px) {
-          margin-top: 112px;
-          margin-left: 53px;
-        }
+      @media (min-width: 426px) {
+        margin-top: 106px;
+        margin-right: 57px;
+        margin-left: 25px;
       }
 
-      .footbal__links {
-        @media (min-width: 1024px) {
-          margin-left: 53px;
-        }
+      @media (min-width: 1024px) {
+        margin-top: 112px;
+        margin-right: 96px;
+        margin-left: 53px;
       }
 
-      #photoLink02 {
-        @media (min-width: 1024px) {
-          margin-right: 53px;
-        }
+      @media (min-width: 1024px) {
+        margin-top: 185px;
+        margin-left: 135px;
+      }
+    }
+
+    .footbal__slider_header {
+      margin-bottom: 19px;
+
+      @media (min-width: 426px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .footbal__slider_img {
+      @media (min-width: 1440px) {
+        right: 137px;
+        width: 574px;
+        height: 816px;
+      }
+    }
+
+    #photoLink02 {
+      @media (min-width: 1024px) {
+        margin-right: 53px;
+      }
+
+      @media (min-width: 1440px) {
+        margin-right: 0;
       }
     }
   }
@@ -77,55 +143,47 @@
     width: 425px;
     height: 603px;
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    width: 612px;
+    height: 869px;
+  }
 }
 
-.footbal__slider_descr {
+.footbal__slider_header {
+  margin: 40px 0 3px 12px;
+  margin-bottom: 3px;
+
   @media (min-width: 426px) {
-    margin-right: 25px;
+    margin: 0;
+    margin-bottom: 8px;
   }
 
-  @media (min-width: 1024px) {
-    margin-right: 0;
-
-    .footbal__links {
-      margin-left: 96px;
-    }
-  }
-
-  .footbal__slider_header {
-    margin: 40px 0 3px 12px;
+  svg {
+    vertical-align: text-bottom;
 
     @media (min-width: 426px) {
-      margin: 23px 25px 8px 25px;
+      width: 80px;
+      height: 27px;
     }
 
     @media (min-width: 1024px) {
-      margin: 0 25px 8px 96px;
-    }
-
-    svg {
-      vertical-align: text-bottom;
-
-      @media (min-width: 426px) {
-        width: 80px;
-        height: 27px;
-      }
+      width: 88px;
+      height: 30px;
     }
   }
+}
 
-  .footbal__slider_subheader {
-    display: inline-block;
-    margin: 0 12px 30px;
-    font-size: 14px;
-    line-height: 24px;
+.footbal__slider_subheader {
+  display: inline-block;
+  margin: 0 12px 30px;
+  font-size: 14px;
+  line-height: 24px;
 
-    @media (min-width: 426px) {
-      margin: 0 0 40px 25px;
-    }
-
-    @media (min-width: 1024px) {
-      margin-left: 96px;
-    }
+  @media (min-width: 426px) {
+    margin: auto;
+    margin-bottom: 25px;
   }
 }
 
@@ -136,29 +194,33 @@
 
   @media (min-width: 426px) {
     display: flex;
+  }
 
-    .footbal__slider_descr {
+  .footbal__slider_descr {
+    @media (min-width: 426px) {
+      margin-top: 163px;
       margin-right: 57px;
-      min-width: 273px;
+      margin-left: 25px;
+      min-width: 248px;
     }
 
-    .footbal__slider_header {
-      margin: 163px 0 20px 25px;
+    @media (min-width: 1024px) {
+      margin-top: 218px;
+      margin-right: 96px;
+      margin-left: 53px;
+      min-width: 295px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 105px;
+      margin-left: 135px;
+      min-width: 297px;
     }
   }
 
-  @media (min-width: 1024px) {
-    .footbal__slider_descr {
-      min-width: 350px;
-      margin-right: 96px;
-    }
-
-    .footbal__slider_header {
-      margin: 218px 0 20px 53px;
-    }
-
-    .footbal__slider_subheader {
-        margin-left: 53px;
+  .footbal__slider_header {
+    @media (min-width: 426px) {
+      margin-bottom: 20px;
     }
   }
 }
@@ -236,11 +298,12 @@
   margin: 0 16px 16px;
 
   @media (min-width: 426px) {
-    margin: 0 0 20px 29px;
+    margin: auto;
+    margin-bottom: 20px;
   }
 
-  @media (min-width: 1024px) {
-    margin-left: 53px;
+  @media (min-width: 1440px) {
+    margin-bottom: 28px;
   }
 }
 
@@ -259,11 +322,6 @@
     width: 100%;
     overflow-x: hidden;
   }
-
-  // @media (min-width: 1024px) {
-  //   // grid-template-columns: repeat(4, auto);
-  //   // gap: 18px;
-  // }
 }
 
 .footbal__media_slider {
@@ -272,12 +330,8 @@
   margin-left: 12px;
 
   @media (min-width: 426px) {
-    margin: 0 25px;
+    margin-left: auto;
     height: auto;
-  }
-
-  @media (min-width: 1024px) {
-    margin: 0 53px;
   }
 
   figure {
@@ -314,24 +368,34 @@
         @media (min-width: 1024px) {
           height: 216px;
         }
-      }
-    }
 
-    &:first-child {
-      @media (min-width: 1024px) {
-        grid-column: span 2;
-      }
+        @media (min-width: 1440px) {
+          height: 279px;
+        }
 
-      img {
-        @media (min-width: 426px) {
-          height: 352px;
+        @media (min-width: 1920px) {
+          height: 378px;
         }
       }
     }
 
-    &:nth-child(2) {
-      @media (min-width: 1024px) {
-        // grid-column: span 2;
+    &:first-child {
+      img {
+        @media (min-width: 426px) {
+          height: 352px;
+        }
+
+        @media (min-width: 1024px) {
+          height: 382px;
+        }
+
+        @media (min-width: 1440px) {
+          height: 483px;
+        }
+
+        @media (min-width: 1920px) {
+          height: 649px;
+        }
       }
     }
 
