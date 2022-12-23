@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
         video.load();
       }
     })
-
   }
+
   video();
 });

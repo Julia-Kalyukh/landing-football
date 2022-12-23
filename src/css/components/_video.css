@@ -1,0 +1,61 @@
+/* ВИДЕО */
+.video {
+  position: relative;
+  width: 100%;
+  margin-top: 72px;
+}
+
+.video #video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.video .video-control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 89.11px;
+  width: 87.19px;
+  border: 0.72px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  transition-property: opacity, visibility, width, height;
+  z-index: 1;
+}
+
+.video .video-control::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 72.66px;
+  height: 74.26px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.video .video-control::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-color: #fff;
+  border-right-width: 0;
+}
+
+.video .video-control-play {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}

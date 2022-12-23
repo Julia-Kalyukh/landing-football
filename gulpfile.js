@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const server = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -11,7 +10,6 @@ const babel = require('gulp-babel');
 const svgStore = require('gulp-svgstore');
 const del = require('del');
 
-// const { STYLE_LIBS, JS_LIBS } = require('./gulp.config');
 const { STYLE_LIBS } = require('./gulp.config');
 
 gulp.task('server', function () {
@@ -26,7 +24,7 @@ gulp.task('server', function () {
   });
 
   gulp.watch('src/**/*.html', { usePolling: true }, gulp.series('html', refresh));
-  gulp.watch('src/css/**/*.{scss,sass}', { usePolling: true }, gulp.series('styles-main'));
+  gulp.watch('src/css/**/*.{scss,sass,css}', { usePolling: true }, gulp.series('styles-main'));
   gulp.watch('src/js/**/*.{js,json}', { usePolling: true }, gulp.series('scripts-main', refresh));
   gulp.watch('src/img/**/*.svg', { usePolling: true }, gulp.series('icons', 'html', refresh));
   gulp.watch('src/img/**/*.{png,jpg}', { usePolling: true }, gulp.series('images', 'html', refresh));
@@ -39,9 +37,21 @@ const refresh = (done) => {
 };
 
 gulp.task('styles-main', function () {
-  return gulp.src("src/css/**/*.{scss,sass}")
-    .pipe(sass().on('error', sass.logError))
+  return gulp.src("src/css/**/*.{scss,sass,css}")
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(rename({ suffix: '.min', prefix: '' }))
+    .pipe(cleanCSS({
+      compatibility: '*',
+      level: {
+        1: {
+          all: true,
+          normalizeUrls: false
+        },
+        2: {
+          restructureRules: true
+        }
+      },
+    }))
     .pipe(gulp.dest("dist/css"))
     .pipe(server.stream());
 });
@@ -59,7 +69,7 @@ gulp.task('html', function () {
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@root',
-      context: { // глобальные переменные для include
+      context: {
         test: 'text'
       }
     }))
@@ -78,19 +88,10 @@ gulp.task('sprite', function () {
 gulp.task('scripts-main', function () {
   return gulp.src(["src/js/**/*.js"])
     .pipe(babel({ presets: ['@babel/preset-env'] }))
-    // .pipe(concat('script.js'))
-    // .pipe(gulp.dest('dist/js'))
     .pipe(uglify())
     .pipe(concat('main.min.js'))
     .pipe(gulp.dest("dist/js"));
 });
-
-// gulp.task('scripts-vendor', function () {
-//   return gulp.src([...JS_LIBS])
-//     .pipe(uglify())
-//     .pipe(concat('vendor.min.js'))
-//     .pipe(gulp.dest("dist/js"));
-// });
 
 gulp.task('fonts', function () {
   return gulp.src("src/fonts/**/*")
@@ -131,7 +132,6 @@ gulp.task('default',
     'styles-main',
     'styles-vendor',
     'scripts-main',
-    // 'scripts-vendor',
     'sprite',
     'copy',
     'html',
@@ -144,7 +144,6 @@ gulp.task('build',
     'styles-main',
     'styles-vendor',
     'scripts-main',
-    // 'scripts-vendor',
     'sprite',
     'copy',
     'html',

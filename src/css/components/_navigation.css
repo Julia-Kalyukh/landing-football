@@ -1,0 +1,40 @@
+/* НАВИГАЦИЯ */
+
+.football__nav {
+  margin-left: 12px;
+}
+
+.football__nav ul {
+  margin: 0;
+  margin-top: -8px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.football__nav ul li {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.football__nav ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.football__nav ul li a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #000000;
+  transition: all 0.25s;
+}
+
+.football__nav ul li svg {
+  margin-right: 8px;
+  fill: #000000;
+  transition: all 0.25s;
+}

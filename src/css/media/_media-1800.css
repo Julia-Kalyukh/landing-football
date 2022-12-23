@@ -1,0 +1,164 @@
+@media (min-width: 1800px) {
+
+  /* ОСНОВНЫЕ СТИЛИ */
+
+  .wrapper {
+    margin-right: 177px !important;
+    margin-left: 177px !important;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 4px;
+  }
+
+
+  /* ЛЕНДИНГ "ВСЕ ДЛЯ ФУТБОЛА" */
+
+  .football {
+    margin: 80px 0 146px;
+  }
+
+
+  /* КАТЕГОРИИ ТОВАРОВ */
+
+  .football__categories {
+    margin-left: 168px;
+    margin-right: 168px;
+  }
+
+  .categories_tag.js-tag-none {
+    display: inline-block;
+  }
+
+  .js-tag-more,
+  .js-tag-close {
+    display: none !important;
+  }
+
+  .football__categories_item {
+    height: 504px;
+  }
+
+
+  /* БРЕНДЫ */
+
+  .footbal__brands {
+    height: 68px;
+    margin: 140px 177px;
+  }
+
+  .footbal__brands .footbal__brands_item {
+    transform: scale(2.3293);
+  }
+
+  .footbal__brands .footbal__brands_item:first-child {
+    margin-left: 56px;
+  }
+
+  .footbal__brands .footbal__brands_item:last-child {
+    margin-right: 24px;
+  }
+
+  .footbal__brands_wrapper {
+    height: 76px;
+  }
+
+
+  /* БЛОК С ССЫЛКАМИ */
+
+  .footbal__links_item {
+    padding: 48px 0;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 4px;
+  }
+
+
+  /* СЛАЙДЕРЫ */
+
+  .footbal__slider {
+    padding-top: 200px;
+  }
+
+  .footbal__slider_img {
+    width: 819px;
+    height: 1163px;
+  }
+
+  .footbal__slider_header svg {
+    width: 106px;
+    height: 36px;
+  }
+
+  /* про-эксперты рекомендуют */
+  .footbal__slider--recommendations {
+    margin-bottom: 267px;
+    padding-bottom: 446px;
+  }
+
+  .footbal__slider--recommendations .footbal__slider_descr {
+    margin-left: 152px;
+    margin-right: 174px;
+    margin-top: 102px;
+    width: 774px;
+  }
+
+  /* сервисы */
+  .footbal__slider--services {
+    padding-bottom: 438px;
+    margin-bottom: 204px;
+  }
+
+  .footbal__slider--services .footbal__slider_descr {
+    margin-top: 102px;
+    margin-left: 177px;
+    min-width: 642px;
+  }
+
+  .footbal__slider--services .footbal__slider_img {
+    right: 176px;
+    width: 774px;
+    height: 1100px;
+  }
+
+  /* PRO-эксперты */
+  .footbal__experts .footbal__slider_descr {
+    margin-right: 208px;
+    margin-left: 177px;
+    min-width: 320px;
+  }
+
+  .footbal__slider_box figure {
+    min-width: 510px;
+    height: 597px;
+    margin-right: 18px;
+  }
+
+  .footbal__slider_box figure figcaption h3 {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+
+  /* медиа */
+  .footbal__media_slider .footbal__media_item:first-child img {
+    height: 649px;
+  }
+
+  .footbal__media_slider .footbal__media_item h4 {
+    margin: 18px 0 6px;
+  }
+
+
+  /* ВИДЕО */
+  .video {
+    margin-top: 140px;
+  }
+}
