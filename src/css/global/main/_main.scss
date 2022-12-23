@@ -14,26 +14,26 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 2000px;
 }
 
 .wrapper {
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     margin-right: 25px !important;
     margin-left: 25px !important;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     margin-right: 53px !important;
     margin-left: 53px !important;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1400px) {
     margin-right: 135px !important;
     margin-left: 135px !important;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1800px) {
     margin-right: 177px !important;
     margin-left: 177px !important;
   }
@@ -58,23 +58,23 @@ h1 {
   line-height: 34px;
   letter-spacing: 2px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: 2.5px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     font-size: 30px;
     letter-spacing: 4px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1400px) {
     font-size: 44px;
     line-height: 56px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1800px) {
     font-size: 48px;
     line-height: 60px;
   }
@@ -85,18 +85,18 @@ h2 {
   line-height: 26px;
   letter-spacing: 1.6px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 2.2px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     font-size: 26px;
     letter-spacing: 4px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1400px) {
     font-size: 28px;
     line-height: 40px;
   }
@@ -107,19 +107,19 @@ h3 {
   line-height: 22px;
   letter-spacing: 1.3px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 1.6px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 3px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1800px) {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 4px;

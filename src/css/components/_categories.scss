@@ -5,19 +5,19 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     margin: 25px 18px -7px 18px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     margin: 35.5px 44px -6.5px 44px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1400px) {
     margin: 41px 126px -9px 126px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1800px) {
     margin-left: 168px;
     margin-right: 168px;
   }
@@ -28,7 +28,7 @@
   position: absolute;
   bottom: 12px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     bottom: 24px
   }
 }
@@ -37,8 +37,15 @@
   margin: 0;
   margin-left: 12px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     margin-left: 24px;
+  }
+
+  @media (min-width: 1000px) {
+    &:hover {
+      color: #1551E5;
+      transition: all 0.25s;
+    }
   }
 }
 
@@ -48,8 +55,8 @@
   flex-wrap: wrap;
   margin-left: 12px;
 
-  @media (min-width: 426px) {
-    margin-left: 24px;
+  @media (min-width: 700px) {
+    margin-left: 23px;
   }
 
   .categories_tag {
@@ -61,24 +68,31 @@
     line-height: 11px;
     color: #333333;
     background: #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 1.91333px;
     cursor: pointer;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       padding: 6px 12px;
       font-size: 12px;
       line-height: 16px;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       font-size: 14px !important;
       line-height: 24px !important;
+
+      &:hover {
+        color: #1551E5;
+        border: 1px solid #1551E5;
+        transition: all 0.25s;
+      }
     }
 
     &:not(:last-child) {
       margin-right: 2.87px;
 
-      @media (min-width: 426px) {
+      @media (min-width: 700px) {
         margin-right: 6px;
       }
     }
@@ -88,8 +102,25 @@
       border: 1px solid #333333;
     }
   }
+}
 
-  .categories_tag.js-tag-none {
+.categories_tag.js-tag-none {
+  display: none;
+
+  @media (min-width: 1800px) {
+    display: inline-block;
+  }
+}
+
+.js-tag-more,
+.js-tag-close {
+  @media (min-width: 1800px) {
+    display: none !important;
+  }
+}
+
+.text-hidden {
+  @media (max-width: 426px) {
     display: none;
   }
 }
@@ -98,55 +129,55 @@
   position: relative;
   height: 187px;
   margin: 4.5px;
+  background-size: contain;
   background-repeat: no-repeat;
 
-  @media (min-width: 426px) {
+  @media (min-width: 700px) {
     height: 312px;
     margin: 7px;
     box-sizing: content-box;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     height: 392px;
     margin: 6.5px 9px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1400px) {
     height: 372px;
     margin: 9px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1800px) {
     height: 504px;
   }
 
   &:not(:nth-child(-n+1)) {
     width: calc(50% - 9px);
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: auto;
     }
   }
 
   &--form {
     width: 100% !important;
-    background-image: url(../img/images/categories/form.png);
+    background-image: url(../img/images/categories/img1-min.png);
     background-size: contain;
     background-position: 67.5% 0;
     background-color: #ECF7FF;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% * 0.666667 - 14px) !important;
-      background-image: url(../img/images/categories/big/form.png);
-      background-size: 255.3720703125px;
+      background-image: url(../img/images/categories/big/img1-big.png);
       order: 1;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% * 0.666667 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(50% - 18px) !important;
     }
 
@@ -155,6 +186,9 @@
     }
 
     .football__categories_tags {
+      @media (min-width: 1000px) {
+        max-width: 298px;
+      }
        .categories_tag {
         padding: 6px 12px;
         font-size: 12px;
@@ -166,26 +200,38 @@
         }
       }
     }
+
+    .categories_tag.js-tag-none {
+  
+      @media (min-width: 1000px) {
+        display: inline-block;
+      }
+    }
+  
+    .js-tag-more,
+    .js-tag-close {
+      @media (min-width: 1000px) {
+        display: none !important;
+      }
+    }
   }
 
   &--boots {
-    background-image: url(../img/images/categories/boots.png);
-    background-size: 132.59px;
-    background-position: 50% 0;
+    background-image: url(../img/images/categories/img2-min.png);
+    background-position: 50% -3px;
     background-color: #EFF8E2;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% - 66.6667% - 14px) !important;
-      background-image: url(../img/images/categories/big/boots.png);
-      background-size: 217.35716247558594px;
+      background-image: url(../img/images/categories/big/img2-big.png);
       order: 2;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% - 66.6667% - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
 
@@ -195,23 +241,21 @@
   }
 
   &--accessories {
-    background-image: url(../img/images/categories/accessories.png);
-    background-size: 110.13px;
-    background-position: 50% 6px;
+    background-image: url(../img/images/categories/img3-min.png);
+    background-position: 50%;
     background-color: #FFF3ED;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% / 3 - 14px) !important;
-      background-image: url(../img/images/categories/big/accessories.png);
-      background-size: 181.48px;
+      background-image: url(../img/images/categories/big/img3-big.png);
       order: 3;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 3 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
 
@@ -221,89 +265,85 @@
   }
 
   &--balls {
-    background-image: url(../img/images/categories/balls.png);
-    background-size: 108.52px;
-    background-position: 50% 6.31px;
+    background-image: url(../img/images/categories/img4-min.png);
+    background-position: 50%;
     background-color: #EBFDFB;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% / 3 - 14px) !important;
-      background-image: url(../img/images/categories/big/balls.png);
-      background-size: 178.24px;
+      background-image: url(../img/images/categories/big/img4-big.png);
       order: 5;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 3 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
   }
 
   &--bags {
-    background-image: url(../img/images/categories/bags.png);
-    background-size: 90.37px;
-    background-position: 50% 11.5px;
+    background-image: url(../img/images/categories/img5-min.png);
+    background-position: 50%;
     background-color: #F4F4F4;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% / 3 - 14px) !important;
-      background-image: url(../img/images/categories/big/bags.png);
-      background-size: 148.43px;
+      background-image: url(../img/images/categories/big/img5-big.png);
       order: 4;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 3 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
   }
 
   &--inventory {
-    background-image: url(../img/images/categories/inventory.png);
-    background-size: 95.19px;
+    background-image: url(../img/images/categories/img6-min.png);
     background-position: 50% -1.48px;
     background-color: #FFF3FF;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% / 2 - 14px) !important;
-      background-image: url(../img/images/categories/big/inventory.png);
-      background-size: 179.49px;
+      background-image: url(../img/images/categories/big/img6-big.png);
       order: 6;
+
+      .football__categories_header {
+        margin-bottom: 12px;
+      }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 2 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
   }
 
   &--medicine {
-    background-image: url(../img/images/categories/medicine.png);
-    background-size: 96px;
-    background-position: 50% 31.17px;
+    background-image: url(../img/images/categories/img7-min.png);
+    background-position: 50%;
     background-color: #ECF1FF;
 
-    @media (min-width: 426px) {
+    @media (min-width: 700px) {
       width: calc(100% / 2 - 14px ) !important;
-      background-image: url(../img/images/categories/big/medicine.png);
-      background-size: 180.89px;
+      background-image: url(../img/images/categories/big/img7-big.png);
       order: 7;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1000px) {
       width: calc(100% / 2 - 18px) !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       width: calc(100% / 4 - 18px) !important;
     }
   }

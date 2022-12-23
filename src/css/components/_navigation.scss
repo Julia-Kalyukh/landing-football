@@ -17,16 +17,27 @@
       font-size: 12px;
       line-height: 16px;
 
-      @media (min-width: 426px) {
+      @media (min-width: 700px) {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
       }
 
+      @media (min-width: 1000px) {
+        &:hover {
+          a {
+          color: #1551E5;
+          }
+          svg {
+            fill: #1551E5;
+          }
+        }
+      }
+
       &:not(:last-child) {
         margin-right: 24px;
 
-        @media (min-width: 426px) {
+        @media (min-width: 700px) {
           margin-right: 32px;
         }
       }
@@ -36,11 +47,13 @@
         align-items: center;
         width: fit-content;
         color: #000000;
+        transition: all 0.25s;
       }
 
       svg {
         margin-right: 8px;
         fill: #000000;
+        transition: all 0.25s;
       }
     }
   }

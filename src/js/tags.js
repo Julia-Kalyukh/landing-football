@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+if( window.innerWidth <= 1920 ){
   let tagsContainer = document.querySelectorAll('.js-tags-container');
 
   tagsContainer.forEach(item => {
@@ -21,4 +21,4 @@ window.addEventListener('DOMContentLoaded', () => {
       btnMore.style.cssText = "display: inline-block";
     })
   })
-});
+} 
