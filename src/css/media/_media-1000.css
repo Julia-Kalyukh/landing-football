@@ -140,7 +140,7 @@
   }
 
   .footbal__brands_wrapper {
-    height: 40px;
+    height: 44px;
   }
 
 
@@ -154,13 +154,15 @@
   .footbal__links_item:active,
   .footbal__links_item:focus {
     color: #1551E5;
-    padding-right: 0;
   }
 
   .footbal__links_item:hover svg,
   .footbal__links_item:active svg,
   .footbal__links_item:focus svg {
     fill: #1551E5;
+    position: relative;
+    transform: translateX(20px);
+    transition: all 0.25s;
   }
 
 

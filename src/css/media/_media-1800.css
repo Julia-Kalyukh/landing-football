@@ -74,7 +74,8 @@
   /* БЛОК С ССЫЛКАМИ */
 
   .footbal__links_item {
-    padding: 48px 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 4px;
